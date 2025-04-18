@@ -1,0 +1,225 @@
+.body{
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+    color: #999;
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+}
+img {
+    width: 52px;
+}
+.header {
+    width: 100%;
+    padding:20px 50px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.header__i{
+    width: 35px;
+    cursor: pointer;
+    display: inline-block;
+}
+.header__img{
+    width: 100%;
+}
+.banner {
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+   
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)), 
+        url('../img/dog-7447075_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-position-y: 38%;
+
+}
+.banner__h2 {
+    width: 100%;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 10px;
+    color: #f3ef15;
+}
+.banner__p {
+    width: 350px;
+    margin: 0 auto;
+    font-size: 25px;
+    opacity: 0.7;
+    color: #ffffff
+}
+.products {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+
+
+}
+.products__article {
+    cursor: pointer;
+    text-align: center;
+
+}
+.products__img {
+    width: 200px;
+    margin-bottom: 15px;
+    
+        
+}
+.products__h3{
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 5px;
+
+}
+.products__p {
+    font-weight: 300;
+    font-size: 15px;
+
+}
+.products__button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 15px;
+    border: 1px solid #1f1f1f;
+    box-shadow: 2px 2px 10px #1f1f1f;
+    color: #1d1c1c;
+    background-color: #e7e7e7;
+
+}
+.products__button--disabled{
+    background-color: #333;
+}
+.cart{
+    width: 500px;
+    background-color: #fff;
+    padding: 25PX;
+    box-sizing: border-box;
+    height: 100%;
+    position: fixed;
+    right: -100%;
+    top: 100px;
+    box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.30);
+
+
+}   
+.cart__h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 25px 0;
+    box-sizing: border-box;
+
+}
+.cart__div{
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.cart__img {
+    width: 60px ;
+
+}
+.cart__p :nth-child(3){
+    font-weight: 500;
+
+}
+.cart__i {
+    width:25px;
+    cursor: pointer;
+}
+.cart__delete-icon {
+    width: 100%;
+
+}
+@media (max-width:820px) {
+
+    
+    header{
+        padding: 15px;
+    }
+    header > img {
+        width: 60px;
+
+    }
+    .products{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .products img {
+        width: 150px;
+
+    }
+    
+    .cart {
+        width: 400px;
+        top: 80px;
+
+    }
+}    
+    
+
+@media (max-width:480px) {
+    .banner {
+        padding: 30px 0;
+
+    }
+    .banner__h2 {
+        font-size: 18px;
+    }
+    .banner__p {
+        font-size: 16px;
+    }
+
+    .products__img {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        max-width: 200px;
+        margin-bottom: 10px;
+        
+    }
+    .products__h3,
+    .products__p {
+        padding: 10px;
+
+
+    }
+
+    .cart {
+        width: 100%;
+        box-shadow: none;
+        
+
+    }
+    .cart__h2 {
+        padding: 15px 0;
+
+    }
+    .cart__div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cart__p {
+        margin: 0;
+    }
+
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(31, 30, 30);
+        color: rgb(255, 255, 255);
+    }
+}
