@@ -2,7 +2,6 @@
   width: 100%;
   font-size: 15px;
   font-weight: 300;
-  color: #ffffff;
   font-family: "Lexend", Arial, Helvetica, sans-serif;
 }
 
@@ -13,13 +12,13 @@ img {
 .header {
   width: 100%;
   padding: 20px 50px;
-  background-color: #555555;
+  background-color: #411a1a;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
 }
-.header i {
+.header__i {
   width: 35px;
   cursor: pointer;
   text-align: center;
@@ -196,4 +195,4 @@ img {
     background-color: rgb(68, 67, 67);
     color: rgb(255, 255, 255);
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
